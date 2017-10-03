@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <string name="app_id">151503205284</string>
+    <string name="package_name">com.flamboyant.tappanic</string>
+    <string name="achievement_first_steps">CgkIpOetsrQEEAIQBg</string>
+    <string name="achievement_you_made_the_half_">CgkIpOetsrQEEAIQBw</string>
+    <string name="achievement_let_it_go_">CgkIpOetsrQEEAIQBQ</string>
+    <string name="achievement_it_looks_like_a_manga_but_i_dont_remind_which_one_...">CgkIpOetsrQEEAIQCA</string>
+    <string name="achievement_we_did_it_">CgkIpOetsrQEEAIQCQ</string>
+    <string name="leaderboard_tap_panic_points">CgkIpOetsrQEEAIQAA</string>
+    <string name="leaderboard_tap_panic_hits">CgkIpOetsrQEEAIQAQ</string>
+    <string name="leaderboard_tap_panic_boss_paul_le_poulpe_time">CgkIpOetsrQEEAIQAw</string>
+</resources>

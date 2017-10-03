@@ -1,0 +1,35 @@
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+sourceCompatibility = '1.7'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+ext {
+	mainClassName = "com.flamboyant.tappanic.IOSLauncher"
+}
+
+launchIPhoneSimulator.dependsOn build
+launchIPadSimulator.dependsOn build
+launchIOSDevice.dependsOn build
+createIPA.dependsOn build
+
+
+eclipse.project {
+    name = appName + "-ios"
+    natures 'org.robovm.eclipse.RoboVMNature'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile files('libs/robopods-google-apis-ios-1.14.0.jar')
+    compile files('libs/robopods-google-mobile-ads-ios-1.14.0.jar')
+    compile files('libs/robopods-google-play-games-ios-1.14.0.jar')
+    compile files('libs/robopods-google-signin-ios-1.14.0.jar')
+    compile files('libs/robopods-facebook-ios-login-1.14.0.jar')
+    compile files('libs/robopods-facebook-ios-core-1.14.0.jar')
+    compile files('libs/robopods-facebook-ios-share-1.14.0.jar')
+}
